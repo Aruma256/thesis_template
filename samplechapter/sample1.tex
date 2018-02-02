@@ -4,25 +4,37 @@
 
 \subsection{項です}
 
-〜〜〜
+単純な数式$1+1=2$，$\B{x} = (1,2,\dots,N)$
 
-\begin{equation}
+
+式番号付き数式の例を\eref{eq:sample1}，\eref{eq:sample2}に示す．
+
+\eq{
 	f(x) = \sum_{n=1}^{\infty} b_n \sin(nx)
-\end{equation}
+	\label{eq:sample1}
+}
 
-\begin{table}[htbp]
-	\begin{center}
-		\caption{表のタイトル}
-	    \label{table:sample_table}
-		\begin{tabular}{cr}
-			\hline
-			a & b\\
-			\hline
-			A & 0.4\\
-			B & 0.9\\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
+\eqm{
+	5 &= 4+1\\
+	&= 3+2\\
+	&= 2+3
+	\label{eq:sample2}
+}
+
+表の例を\tref{table:sample_table}に示す．
+
+\newtable{cr}{表のタイトル}{table:sample_table}{
+	\hline
+	a & b\\
+	\hline
+	A & 0.4\\
+	B & 0.9\\
+	\hline
+}
+
+グラフの例を\fref{fig:sample_graph}に示す．
+
+\newfig{100}{sample_graph}{グラフの例}{fig:sample_graph}
+
 
 
