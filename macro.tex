@@ -1,0 +1,33 @@
+% figure
+\newcommand{\newfig}[4]{
+	\begin{figure}[htbp]
+	    \begin{center}
+		    \includegraphics[width=#1mm]{#2}
+		    \caption{#3}
+		    \label{#4}
+	    \end{center}
+	\end{figure}
+
+}
+\newcommand{\fref}[1]{図\ref{#1}}
+
+% table
+\newcommand{\newtable}[4]{
+	\begin{table}[htbp]
+		\begin{center}
+			\caption{#2}
+		    \label{#3}
+			\begin{tabular}{#1}
+				#4
+			\end{tabular}
+		\end{center}
+	\end{table}
+
+}
+\newcommand{\tref}[1]{表\ref{#1}}
+
+% math
+\newcommand{\B}[1]{\boldsymbol{#1}}
+\newcommand{\eq}[1]{\begin{equation}#1\end{equation}}
+\newcommand{\eqm}[1]{\eq{\begin{aligned}#1\end{aligned}}}
+\newcommand{\eref}[1]{式\eqref{#1}}
