@@ -1,2 +1,10 @@
 /document.pdf
 /tmp/
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+*.toc
+*.dvi
+*.out
