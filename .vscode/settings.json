@@ -1,0 +1,39 @@
+{
+    "latex-workshop.chktex.enabled": false,
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "uplatex",
+            "args": [
+                "-kanji=utf8",
+                "-interaction=nonstopmode",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "command": "upbibtex",
+            "args": [
+                "-kanji=utf8",
+                "-kanji-internal=uptex",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "command": "uplatex",
+            "args": [
+                "-kanji=utf8",
+                "-interaction=nonstopmode",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "command": "ptex2pdf",
+            "args": [
+                "-l",
+                "-u",
+                "-ot",
+                "-kanji=utf8 -synctex=1 -interaction=nonstopmode",
+                "%DOC%"
+            ]
+        },
+    ]  
+}
